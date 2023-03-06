@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "aside header" "aside contenido" "aside contenido" "aside contenido" "aside contenido" "footer footer";
+}
+
+aside {
+    grid-area: aside;
+    background-color: #F2A516;
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    color: snow;
+    /* margin: 1px; */
+}
+
+#myfoto {
+    width: 90%;
+    border-radius: 110%;
+    padding: 5%;
+}
+
+#titulo {
+    /* margin: 10%; */
+    border-bottom: 2PX solid white;
+}
+
+header {
+    background-color: #38D0F2;
+    text-align: center;
+    color: azure;
+    border-bottom: 2px solid white;
+    /* justify-self: center; */
+}
+
+#hero {
+    border-bottom: 2PX solid white;
+}
+
+.contenido {
+    grid-area: contenido;
+}
