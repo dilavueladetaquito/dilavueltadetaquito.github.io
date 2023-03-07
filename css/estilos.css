@@ -2,7 +2,7 @@ body {
     display: grid;
     grid-template-columns: 20% auto;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "aside header" "aside contenido" "aside contenido" "aside contenido" "aside contenido" "footer footer";
+    grid-template-areas: "aside header" "aside educacion" "aside educacion" "aside trabajo" "aside trabajo" "footer footer";
 }
 
 aside {
@@ -21,22 +21,36 @@ aside {
 }
 
 #titulo {
-    /* margin: 10%; */
     border-bottom: 2PX solid white;
+    color: aliceblue;
 }
 
 header {
-    background-color: #38D0F2;
+    background-color: #A1C7E0;
     text-align: center;
     color: azure;
-    border-bottom: 2px solid white;
-    /* justify-self: center; */
 }
 
 #hero {
     border-bottom: 2PX solid white;
 }
 
-.contenido {
-    grid-area: contenido;
+.educacion {
+    grid-area: educacion;
+    background-color: #0099DD;
+    color: aliceblue;
+}
+
+.trabajo {
+    grid-area: trabajo;
+    background-color: #00ABBD;
+    color: aliceblue;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 15 auto 15 auto 15 auto;
+    background-color: #026E81;
+    color: aliceblue;
 }
